@@ -7,6 +7,13 @@
 
 body {
     background-color: #212529;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionTitle {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    font-size: 2.3rem;
 }
 
 
@@ -35,6 +42,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 5;
+}
+
+.navItem__navLink {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 .navContainer__logo {
@@ -67,13 +79,12 @@ body {
 .aboutContainer__textContent {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-start;*/
     align-items: center;
-    /*width: 50%;*/
 }
 
 .textContent__aboutTitle {
     text-align: center;
+    font-family: 'Aclonica', sans-serif;
 }
 
 .content__parrContainer {
@@ -84,9 +95,7 @@ body {
 .aboutContainer__imgContent {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-end;*/
     align-items: center;
-    /*width: 50%;*/
 }
 
 
@@ -94,7 +103,6 @@ body {
 # Projects
 ---------------------------------*/
 .projectsContainer {
-    min-height: 100vh;
     background-color: #edf2f4;
     padding: 20vh 10vw 20vh 10vw;
 }
@@ -102,24 +110,19 @@ body {
 .projectsContainer__title {
     text-align: center;
     margin-bottom: 10vh;
+    text-shadow: 2px 0 0 #8d99ae;
 }
 
 .itemListContainer__itemContainer {
-    margin-bottom: 8vh;
-    /*display: flex;*/  
+    margin-bottom: 8vh; 
 }
 
 .itemContainer__imgContent, .itemContainer__textContent {
-    /*width: 50%;*/
     text-align: center;
 }
 
 .itemContainer__imgContent {
     background-color: #edf2f4;
-    /*border: 2px solid #8d99ae;*/
-    /*box-shadow: 20px 20px 20px rgba(141, 153, 174, 0.3);
-    box-shadow: 20px 20px 20px rgba(14, 39, 82, 0.3);*/
-    /*box-shadow: 20px 20px 20px rgba(35, 85, 172, 0.3);*/
 }
 
 .projectLink__image {
@@ -137,17 +140,14 @@ body {
     align-items: center;
 }
 
-/*.textContent__projectTitle {
-    margin-top: 15vh;
-}*/
-
-/*.textContent__parr {
-    width: 60%;
-}*/
+.textContent__projectTitle {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 3vh;
+}
 
 .textContent__line {
     border: 2px solid #ef233c;
-    /*width: 60%;*/
 }
 
 
@@ -178,36 +178,44 @@ body {
 
 .socialIconsSet__link {
     text-decoration: none;
+    color: #edf2f4;
 }
 
-.socialIconsSet__icon {
-    margin: 0 2vw 0 2vw;
+.socialIconsSet__link:hover {
+    color: #edf2f4;
 }
 
 .socialIconsSet__icon:hover {
     transform: scale(1.2);
 }
 
-.iconContainer__mailIconsSet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mailContainer {
+    padding: 0 5vw 0 5vw;
 }
 
 .mailContainer__parr {
     text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 
 /*--------------------------------
 # Footer
 ---------------------------------*/
-footer {
+.endSection {
     height: 35vh;
+    padding: 10vh 15vw 10vh 15vw;
     background-color: #8d99ae;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.endSection__parr {
+    color: #212529;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -261,6 +269,13 @@ footer {
     .textContent__projectTitle {
         margin-top: 3vh;
     }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 6vw 0 6vw;
+    }
 }
 
 
@@ -308,6 +323,13 @@ footer {
     .textContent__line {
         width: 40%;
     }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 4vw 0 4vw;
+    }
 }
 
 @media only screen and (min-width:992px) {
@@ -333,7 +355,6 @@ footer {
         justify-content: flex-end;
     }
 
-
     /*--------------------------------
     # About
     ---------------------------------*/
@@ -353,7 +374,6 @@ footer {
         justify-content: flex-end;
     }
 
-
     /*--------------------------------
     # Projects
     ---------------------------------*/
@@ -371,6 +391,13 @@ footer {
 
     .textContent__projectTitle {
         margin-top: 7vh;
+    }
+
+    /*--------------------------------
+    # Contact
+    ---------------------------------*/
+    .socialIconsSet__icon {
+        margin: 0 2vw 0 2vw;
     }
 
 }
@@ -394,5 +421,6 @@ footer {
     .textContent__projectTitle {
         margin-top: 15vh;
     }
+
 }
 
